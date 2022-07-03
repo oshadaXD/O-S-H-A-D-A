@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm i pm2 -g && npm install && pm2 start index.js && pm2 log
+RUN npm i pm2 -g && npm install && node .
 
 COPY . .
 
